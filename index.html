@@ -100,6 +100,9 @@ function downloader(link){
   $.ajax({
             type:'POST',
             dataType:'JSON',
+	    headers: {
+		'Content-Type': 'application/x-www-form-urlencoded'
+	    },
             url:'https://bigful.com/downloader.ajax.php',
             data:{
                   'link':link
