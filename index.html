@@ -99,13 +99,7 @@ $('.submit').click(function(){
 function downloader(link){
   $.ajax({
             type:'POST',
-            dataType:'json',
-	    headers: {
-		    'Access-Control-Allow-Credentials' : true,
-		    'Access-Control-Allow-Origin':'*',
-		    'Access-Control-Allow-Methods':'GET',
-		    'Access-Control-Allow-Headers':'application/json',
-		  },
+            dataType:'JSON',
             url:'https://bigful.com/downloader.ajax.php',
             data:{
                   'link':link
